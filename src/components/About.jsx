@@ -82,7 +82,7 @@ function About() {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-center dark:text-white transform translate-z-12">Problem Solving</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center transform translate-z-12">
-              Every project starts with understanding the “why.” I enjoy tackling real-world challenges by combining design thinking, user feedback, and iterative testing to create solutions that make an impact.
+              Every project starts with understanding the “why.” I enjoy tackling real-world challenges by combining design thinking, user feedback, and iterative testing to create solutions that make an impact.
             </p>
           </motion.div>
         </div>
