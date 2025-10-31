@@ -30,7 +30,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            UI/UX Designer & Front-end Developer
+            Product Designer & Front-end Developer
           </motion.h2>
           <motion.p
             className="text-xl mb-8 text-gray-600 dark:text-gray-400"
@@ -38,7 +38,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            Crafting beautiful digital experiences where design meets code
+            I design and build intuitive, user-centered digital products that bridge creativity and functionality. From UX research to responsive interfaces in React, I craft seamless experiences that solve real problems.  
           </motion.p>
           <motion.div 
             className="flex justify-center gap-4"
