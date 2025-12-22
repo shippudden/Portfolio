@@ -1,4 +1,4 @@
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -18,6 +18,9 @@ import FinalThought from "./FinalThought";
 import LessonsLearned from "./LessonsLearned";
 import DesignImpact from "./DesignImpact";
 import LookingAhead from "./LookingAhead";
+import CaseStudyImage from "./CaseStudyImage";
+import CaseStudyList from "./CaseStudyList";
+import { ANIMATION_DELAYS, COMMON_CLASSES } from "../../constants/animations";
 
 export default function CaseStudyLayout({ 
   title, introduction, coverImage, overview, projectBackground, whatIWillCover, objectives, goalAndMethods, highFidelityImage, designprocess, userFlow, userFlowDetails, whyThisFlow, designChoices, designDetails, whyTheseChoices, informationArchitectureImg, wireframesImg, wireframesImg2, onboardingScreensImg, registrationScreensImg, finalDesign, colorPalette, typography, colorUsage, fontUsage, colorPaletteImg, typographyImg, designImpact, lessonsLearned, finalThought, lookingAhead, conclusion, prototypeUrl 
@@ -31,32 +34,30 @@ export default function CaseStudyLayout({
       >
         <Link
           to="/projects"
-          className="inline-flex items-center text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 mb-8"
+          className={COMMON_CLASSES.backButton}
         >
           <ArrowLeft className="mr-2" size={20} />
           Back to Projects
         </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white"> {title} </h1>
+        <h1 className={COMMON_CLASSES.pageTitle}>{title}</h1>
       </motion.div>
 
-      <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+      <CaseStudyImage
         src={coverImage}
         alt={title}
-        className="w-full h-[600px] object-cover rounded-xl mb-12"
+        height="LARGE"
+        delay={ANIMATION_DELAYS.NORMAL}
       />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: ANIMATION_DELAYS.SLOW }}
         className="space-y-12"
       >
         <Introduction introduction={introduction} />
 
-        <CaseStudySection title="Overview" >
+        <CaseStudySection title="Overview">
           {overview}
         </CaseStudySection>
 
@@ -68,30 +69,28 @@ export default function CaseStudyLayout({
 
         <GoalAndMethods goalAndMethods={goalAndMethods} />
 
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={highFidelityImage}
-        alt={title}
-        className="w-full h-[500px] object-cover rounded-xl mb-12"
-      />
-        
-        <CaseStudySection title="Design Process" >
+        <CaseStudyImage
+          src={highFidelityImage}
+          alt={title}
+          height="MEDIUM"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
+
+        <CaseStudySection title="Design Process">
           {designprocess}
         </CaseStudySection>
 
-        <CaseStudySection title="User Flow" >
+        <CaseStudySection title="User Flow">
           {userFlow}
         </CaseStudySection>
 
         <UserFlowDetails userFlowDetails={userFlowDetails} />
 
-        <CaseStudySection title="Why this flow?" >
+        <CaseStudySection title="Why this flow?">
           {whyThisFlow}
         </CaseStudySection>
 
-        <CaseStudySection title="Design Choice" >
+        <CaseStudySection title="Design Choice">
           {designChoices}
         </CaseStudySection>
 
@@ -101,92 +100,79 @@ export default function CaseStudyLayout({
           {whyTheseChoices}
         </CaseStudySection>
 
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={informationArchitectureImg}
-        alt={title}
-        className="w-full h-[400px] object-cover rounded-xl mb-12"
-      />
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={onboardingScreensImg}
-        alt={title}
-        className="w-full h-[400px] object-cover rounded-xl mb-12"
-      />
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={registrationScreensImg}
-        alt={title}
-        className="w-full h-[400px] object-cover rounded-xl mb-12"
-      />
+        <CaseStudyImage
+          src={informationArchitectureImg}
+          alt={title}
+          height="SMALL"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
 
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={wireframesImg}
-        alt={title}
-        className="w-full h-[500px] object-cover rounded-xl mb-12"
-      />
+        <CaseStudyImage
+          src={onboardingScreensImg}
+          alt={title}
+          height="SMALL"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
 
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={wireframesImg2}
-        alt={title}
-        className="w-full h-[500px] object-cover rounded-xl mb-12"
-      />
+        <CaseStudyImage
+          src={registrationScreensImg}
+          alt={title}
+          height="SMALL"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
+
+        <CaseStudyImage
+          src={wireframesImg}
+          alt={title}
+          height="MEDIUM"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
+
+        <CaseStudyImage
+          src={wireframesImg2}
+          alt={title}
+          height="MEDIUM"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
 
         <FinalDesign finalDesign={finalDesign} />
 
-        <CaseStudySection title="Color Palette" >
+        <CaseStudySection title="Color Palette">
           {colorPalette}
         </CaseStudySection>
 
         <ColorUsage colorUsage={colorUsage} />
 
-        <CaseStudySection title="Typography" >
+        <CaseStudySection title="Typography">
           {typography}
         </CaseStudySection>
-        
+
         <FontUsage fontUsage={fontUsage} />
 
-        <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={typographyImg}
-        alt={title}
-        className="w-full h-[500px] object-cover rounded-xl mb-12"
-      />
+        <CaseStudyImage
+          src={typographyImg}
+          alt={title}
+          height="MEDIUM"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
 
-      <motion.img
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        src={colorPaletteImg}
-        alt={title}
-        className="w-full h-[500px] object-cover rounded-xl mb-12"
-      />
+        <CaseStudyImage
+          src={colorPaletteImg}
+          alt={title}
+          height="MEDIUM"
+          delay={ANIMATION_DELAYS.NORMAL}
+        />
 
-      <FinalThought finalThought={finalThought} />
-      <LessonsLearned lessonsLearned={lessonsLearned} />
-      <DesignImpact designImpact={designImpact} />
-      <LookingAhead lookingAhead={lookingAhead} />
+        <FinalThought finalThought={finalThought} />
+        <LessonsLearned lessonsLearned={lessonsLearned} />
+        <DesignImpact designImpact={designImpact} />
+        <LookingAhead lookingAhead={lookingAhead} />
 
-        <CaseStudySection title="Conclusion" >
+        <CaseStudySection title="Conclusion">
           {conclusion}
         </CaseStudySection>
 
         <PrototypeSection url={prototypeUrl} />
-
       </motion.div>
     </article>
   )
