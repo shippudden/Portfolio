@@ -18,13 +18,14 @@ import linguaQuest from "../assets/LinguaQuestThumbnail.png";
 
 export const projects = [
     {
-      id: "lingua-quest", // changed from "lingua-quest" to match case-studies slug
+      id: "lingua-quest",
       title: "Lingua Quest",
       description: "An AI-powered redesign of Duolingo, transforming the learning experience into an epic adventure. Using UXPilot for ideation and Figma for execution, I created a cohesive, gamified mobile app with a unique visual identity and interactive prototype. The design process leveraged AI as a collaborative partner—using UXPilot for rapid concept generation through advanced prompt engineering.",
       image: linguaQuest,
       tags: ["AI-Assisted Design", "Mobile UI/UX", "Duolingo Redesign", "Prompt Engineering", "UX Pilot", "Iterative Design", "Interactive Prototyping", "Figma", "Gamification", "Visual Design"],
       type: "design",
-      prototype: "https://www.figma.com/proto/hVgGw4R5jvmVdYTvxgsFdg/LinguaQuest?page-id=0%3A1&node-id=3-3&viewport=140%2C69%2C0.22&t=zDQ4t3Bp7xeVjpBP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A3"
+      prototype: "https://www.figma.com/proto/hVgGw4R5jvmVdYTvxgsFdg/LinguaQuest?page-id=0%3A1&node-id=3-3&viewport=140%2C69%2C0.22&t=zDQ4t3Bp7xeVjpBP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A3",
+      caseStudyUrl: "https://www.behance.net"
     },
 
     {
@@ -66,7 +67,8 @@ export const projects = [
       image: toycraftImage,
       tags: ["Mobile Design", "UI/UX", "Prototyping", "Visual Design", "High-Fidelity Design", "Interactive Design", "Playful UI", "Figma", "Toy Customization", "Color Customizaton"],
       type: "design",
-      prototype: "https://www.figma.com/proto/mFt9oVZAQG6rWKSpXI4rZX/ToyCraft-Studio?page-id=418%3A5186&node-id=418-5315&viewport=1063%2C279%2C0.28&t=8eTvPKTPzi6Hxbw8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=418%3A5238"
+      prototype: "https://www.figma.com/proto/mFt9oVZAQG6rWKSpXI4rZX/ToyCraft-Studio?page-id=418%3A5186&node-id=418-5315&viewport=1063%2C279%2C0.28&t=8eTvPKTPzi6Hxbw8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=418%3A5238",
+      caseStudyUrl: "https://www.behance.net"
     },
 
     {
