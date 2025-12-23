@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, FileText } from 'lucide-react';
+import { Github, ExternalLink, FileText, BookOpen } from 'lucide-react';
 import PropTypes from 'prop-types';
 
 function ProjectLinks({ project }) {
@@ -34,18 +34,23 @@ function ProjectLinks({ project }) {
 
   return (
     <div className="flex gap-4">
-      {project.caseStudyUrl && (
-        <motion.a
-          href={project.caseStudyUrl}
+      {project.id === 'lingua-quest' ? (
+        <motion.a 
+          href="https://app.uxcel.com/showcase/linguaquest-866?utm_source=share-brief-project"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
-          whileHover={{ scale: 1.1, rotateZ: 5 }}
+          whileHover={{ scale: 1.1, rotateZ: -5 }}
           whileTap={{ scale: 0.95 }}
         >
-          <FileText size={18} />
-          <span>Case Study</span>
+          <BookOpen size={18} />
+          <span>UXcel</span>
         </motion.a>
+      ) : (
+        <motion.div whileHover={{ scale: 1.1, rotateZ: 5 }} whileTap={{ scale: 0.95 }}>
+            <FileText size={18} />
+            <span>Case Study</span>
+        </motion.div>
       )}
       <motion.a
         href={project.prototype}

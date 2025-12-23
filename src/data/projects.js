@@ -10,10 +10,7 @@ import resourceImg from "../assets/Resource app.png";
 import dashboardImg from "../assets/MotionUI Dashboard.jpg";
 import axonUIImg from "../assets/Axon UI.png";
 import orbit from "../assets/Orbit.jpg";
-// import LoomImg from "../assets/Loom Case Study.jpg";
-// import mapQuestImg from "../assets/MapQuest.jpg";
 import creativeHubImg from "../assets/Creativehub.png";
-// import mrFungiImg from "../assets/Mr. Fungi.png";
 import linguaQuest from "../assets/LinguaQuestThumbnail.png";
 
 export const projects = [
@@ -25,7 +22,6 @@ export const projects = [
       tags: ["AI-Assisted Design", "Mobile UI/UX", "Duolingo Redesign", "Prompt Engineering", "UX Pilot", "Iterative Design", "Interactive Prototyping", "Figma", "Gamification", "Visual Design"],
       type: "design",
       prototype: "https://www.figma.com/proto/hVgGw4R5jvmVdYTvxgsFdg/LinguaQuest?page-id=0%3A1&node-id=3-3&viewport=140%2C69%2C0.22&t=zDQ4t3Bp7xeVjpBP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A3",
-      caseStudyUrl: "https://www.behance.net"
     },
 
     {
