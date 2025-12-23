@@ -57,17 +57,6 @@ export const projects = [
     },
 
     {
-      id: "toycraft-studio",
-      title: "ToyCraft Studio",
-      description: "Toycraft Studio is a mobile app concept designed to give users the freedom to customize their toys through a playful and intuitive interface. The app focuses on a single engaging feature—color customization—allowing users to experiment with different color palettes and bring their creative ideas to life.",
-      image: toycraftImage,
-      tags: ["Mobile Design", "UI/UX", "Prototyping", "Visual Design", "High-Fidelity Design", "Interactive Design", "Playful UI", "Figma", "Toy Customization", "Color Customizaton"],
-      type: "design",
-      prototype: "https://www.figma.com/proto/mFt9oVZAQG6rWKSpXI4rZX/ToyCraft-Studio?page-id=418%3A5186&node-id=418-5315&viewport=1063%2C279%2C0.28&t=8eTvPKTPzi6Hxbw8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=418%3A5238",
-      caseStudyUrl: "https://www.behance.net"
-    },
-
-    {
       id: "calorie-counter",
       title: "Calorie Counter",
       description: "The Fitness calorie younter is a web-based application designed to help users track their calorie expenditure based on their daily physical activities. By inputting the minutes spent on walking, running, and cycling, users can easily calculate the total calories burned.",
