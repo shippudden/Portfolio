@@ -1,4 +1,3 @@
-import toycraftImage from "../assets/ToyCraftThumbnail.png";
 import calorieCounterImg from "../assets/Calorie Counter.png";
 import iceCreamOrderSystemImg from "../assets/Ice Cream Order System.png";
 import bookManagementImg from "../assets/Library Book Management.png";
