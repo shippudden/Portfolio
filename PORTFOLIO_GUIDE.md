@@ -399,7 +399,6 @@ npm run lint
 5. **Database:** Move projects to Supabase for easier management
 6. **Newsletter:** Email subscription for updates
 7. **Dark Mode Toggle:** Save preference per device
-8. **Internationalization:** Support multiple languages
 
 ---
 

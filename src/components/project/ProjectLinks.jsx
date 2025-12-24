@@ -69,6 +69,7 @@ function ProjectLinks({ project }) {
   if (project.type === 'development') {
     return (
       <div className="flex gap-4">
+        {/* GitHub link */}
         <motion.a 
           href={project.github}
           target='_blank'
@@ -80,6 +81,8 @@ function ProjectLinks({ project }) {
           <Github size={18} />
           <span>Code</span>
         </motion.a>
+
+        {/* Demo link */}
         <motion.a 
           href={project.demo}
           target='_blank'
