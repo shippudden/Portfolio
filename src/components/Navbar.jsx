@@ -5,6 +5,35 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/useTheme';
 import NavLink from './ui/NavLink';
 
+/**
+ * Navbar Component
+ *
+ * A fixed, responsive navigation bar with dark mode toggle and mobile menu support.
+ *
+ * Key Features:
+ * - Dynamic navigation items based on current page (smooth scroll on home, links on other pages)
+ * - Dark mode toggle with animated sun/moon icon
+ * - Mobile hamburger menu with animated dropdown
+ * - Backdrop blur effect for modern aesthetic
+ * - Gradient logo with smooth animations
+ *
+ * Styling Decisions:
+ * - Fixed positioning with z-50 keeps navbar above all other content
+ * - Backdrop blur creates glass-morphism effect (modern, premium feel)
+ * - Semi-transparent background allows content beneath to show through
+ * - Dark mode support via useTheme hook applied throughout
+ *
+ * Mobile Responsive:
+ * - Desktop (md+): Full horizontal navigation with dark mode toggle
+ * - Mobile: Hamburger menu expands vertically with smooth animation
+ * - Same navigation items, different presentation for each breakpoint
+ *
+ * Animation Strategy:
+ * - Navbar slides in from top on mount (spring physics)
+ * - Hamburger menu animates open/closed
+ * - Dark mode toggle spins smoothly (180 degree rotation)
+ * - Uses Framer Motion for all animations
+ */
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { darkMode, setDarkMode } = useTheme();

@@ -4,6 +4,45 @@ import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
 import { useMemo, useState } from 'react';
 
+/**
+ * ProjectFilter Component (Projects Section)
+ *
+ * Manages project filtering and displays a featured subset of projects with filter controls.
+ *
+ * State:
+ * - projectFilter {string} - Currently selected filter ('all', 'design', 'development')
+ *
+ * Features:
+ * - Filter buttons for All, Design, and Development project types
+ * - Displays only 3 featured projects at a time (limited for homepage)
+ * - Button states change color/background when selected
+ * - Responsive button layout that works on mobile
+ * - "See All Projects" link to dedicated projects page
+ *
+ * Performance Optimization - useMemo:
+ * - filteredProjects is memoized to avoid recalculating on every render
+ * - Only recalculates when projectFilter dependency changes
+ * Why? Filtering array of projects is fast, but memoizing is a best practice
+ * for demonstrating performance awareness. Keeps computation out of render flow.
+ *
+ * Styling Decisions:
+ * - Filter buttons have active state (blue-600 background when selected)
+ * - Inactive buttons use gray background (light mode) or dark:bg-gray-800 (dark mode)
+ * - hover:scale-105 provides tactile feedback on hover
+ * - 3-column responsive grid: 1 column mobile, 2 columns tablet, 3 columns desktop
+ * - Gap increases on larger screens for better spacing
+ *
+ * Button Interaction Strategy:
+ * - Buttons include icons (Code2, Palette) to improve visual recognition
+ * - Smooth transitions between selected/unselected states
+ * - Scale animation on hover creates button feedback
+ *
+ * Layout:
+ * - Full-width section with padding for breathing room
+ * - Container with max-width prevents stretching on ultra-wide screens
+ * - Centered heading and buttons for visual hierarchy
+ * - Grid of project cards with consistent gap spacing
+ */
 function Projects() {
   const [projectFilter, setProjectFilter] = useState('all');
   

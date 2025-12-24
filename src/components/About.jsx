@@ -1,6 +1,43 @@
 import { motion } from 'framer-motion';
 import { Code2, Palette, Lightbulb } from 'lucide-react';
 
+/**
+ * About Component
+ *
+ * Introduces the portfolio owner with expertise areas and personal approach.
+ *
+ * Key Features:
+ * - Personal introduction paragraph with background and philosophy
+ * - Three expertise cards showing different strengths:
+ *   1. Front-end Development (with Code2 icon)
+ *   2. Product Design (with Palette icon)
+ *   3. Problem Solving (with Lightbulb icon)
+ * - 3D rotation effect on cards when viewing
+ *
+ * Styling Decisions:
+ * - Light gray background (bg-gray-50 / dark:bg-gray-800/50) separates from hero
+ * - Card layout: 1 column mobile, 3 columns tablet+
+ * - Cards have white background with subtle shadow
+ * - Icon colors vary (blue, purple, yellow) for visual interest
+ *
+ * 3D Animation Strategy:
+ * - Cards rotate with rotateX: 45 on entry, then animate to rotateX: 0
+ * - Staggered delays (0.2s, 0.3s, 0.4s) create cascade effect
+ * - Spring physics make rotation feel natural and responsive
+ * - hover:scale-105 provides additional interactive feedback
+ * Why 3D? Adds depth and catches user attention as they scroll
+ *
+ * Layout:
+ * - Section is marked with id="about" for navbar navigation
+ * - scroll-mt-20 provides spacing from fixed navbar
+ * - Max-width container prevents text from stretching too wide
+ * - Responsive padding maintains margins on mobile
+ *
+ * Copy Strategy:
+ * - Introductory paragraph establishes credibility and approach
+ * - Three cards complement the intro with specific expertise areas
+ * - Professional but approachable tone throughout
+ */
 function About() {
   return (
     <section id="about" className="py-20 px-6 bg-gray-50 dark:bg-gray-800/50 scroll-mt-20">

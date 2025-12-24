@@ -2,6 +2,69 @@ import { motion } from 'framer-motion';
 import { Github, ExternalLink, FileText, BookOpen } from 'lucide-react';
 import PropTypes from 'prop-types';
 
+/**
+ * ProjectLinks Component
+ *
+ * Displays contextual action links based on project type (design vs. development).
+ *
+ * Props:
+ * - project {Object} - Project data containing type and relevant URLs:
+ *   - type {string} - 'design' or 'development'
+ *   - For development: github, demo URLs
+ *   - For design: prototype, caseStudyUrl
+ *
+ * Conditional Rendering Strategy:
+ * 1. Development Projects:
+ *    - Shows "Code" link to GitHub repository
+ *    - Shows "Demo" link to live application
+ *    - Why? Developers want to see code and working demo
+ *
+ * 2. Design Projects:
+ *    - Shows "Case Study" link to external portfolio (Behance, etc.)
+ *    - Shows "View Prototype" link to Figma prototype
+ *    - Why? Designers need to show detailed process and visual iterations
+ *
+ * Icon Usage:
+ * - Github icon for code/repository
+ * - ExternalLink icon for demos and prototypes
+ * - FileText icon for case studies
+ * Why? Icons improve scannability and communicate link purpose at a glance
+ *
+ * Hover Animations:
+ * - whileHover: scale 1.1 (10% enlargement)
+ * - whileHover: rotateZ (5 or -5 degrees for variation)
+ * - whileTap: scale 0.95 (shrinks on click for tactile feedback)
+ * Why? Provides interactive feedback showing links are clickable
+ *
+ * Styling:
+ * - Flex layout with gap-4 for spacing between links
+ * - Icon size 18px (visible but not overwhelming)
+ * - Text color gray-600 default, blue-600 on hover
+ * - Dark mode: gray-400 default, blue-400 on hover
+ * - Flex items-center gap-2 aligns icon and text horizontally
+ *
+ * Link Attributes:
+ * - target="_blank" opens links in new tab
+ * - rel="noopener noreferrer" prevents security vulnerabilities
+ * Why? Users expect external links to open in new tabs, maintaining page state
+ * rel attributes prevent window.opener exploitation
+ *
+ * Performance:
+ * - Uses motion.a for animation (semantic HTML)
+ * - Only renders relevant links per project type
+ * - Minimal DOM elements (no unnecessary containers)
+ *
+ * Accessibility:
+ * - Icon + text combination provides clarity
+ * - Proper link semantics
+ * - Hover states are visible
+ * - Color + icon (not color alone) conveys meaning
+ *
+ * Maintainability:
+ * - project.type controls behavior (single source of truth)
+ * - Easy to add new link types (modify conditional)
+ * - Icon and link pairs are consistent
+ */
 function ProjectLinks({ project }) {
   if (project.type === 'development') {
     return (

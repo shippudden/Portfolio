@@ -2,6 +2,43 @@ import { motion } from 'framer-motion';
 import Button3D from './ui/Button3D';
 import ParticlesBackground from './ui/ParticleBackground';
 
+/**
+ * Hero Component
+ *
+ * The landing section that introduces the portfolio with an eye-catching design.
+ *
+ * Key Features:
+ * - Animated particle background for visual depth
+ * - Staggered text animations creating a cascade effect
+ * - Gradient text for name and headings
+ * - CTA buttons for navigation
+ * - Floating chevron animation that guides users to scroll
+ *
+ * Styling Decisions:
+ * - Full viewport height (min-h-[calc(100vh-5rem)] accounts for navbar)
+ * - Centered flex layout ensures perfect centering on all devices
+ * - Gradient text using bg-clip-text creates modern, premium aesthetic
+ * - Dark mode colors ensure readability in both themes
+ *
+ * Animation Strategy - Cascade Effect:
+ * - Title animates first (delay: 0.2s)
+ * - Subtitle animates second (delay: 0.4s)
+ * - Description animates third (delay: 0.6s)
+ * - Buttons animate last (delay: 0.8s)
+ * This sequential timing creates a satisfying "reveal" effect that captures attention
+ * without feeling jarring. Each element appears as the previous one settles.
+ *
+ * Floating Chevron:
+ * - Uses `animate` with y-axis oscillation for infinity loop
+ * - Bounces between 0 and 10 pixels
+ * - Smooth easing makes the motion feel natural and inviting
+ * - Links to #about section for smooth scroll
+ *
+ * Layout:
+ * - Responsive text sizes: h1 scales from text-5xl (mobile) to text-7xl (desktop)
+ * - Container max-width prevents text from stretching on ultra-wide screens
+ * - Proper padding maintains margins on smaller devices
+ */
 function Hero() {
 
   return (

@@ -1,6 +1,54 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
+/**
+ * Contact Component
+ *
+ * Final section with call-to-action and social media links.
+ *
+ * Key Features:
+ * - Large heading inviting connection
+ * - Three social links: GitHub, LinkedIn, Email
+ * - Rotating animation on icon hover
+ * - Smooth scale transitions
+ * - Simple, focused design to encourage action
+ *
+ * Styling Decisions:
+ * - No background color - blends with main page background
+ * - Centered text layout focuses attention
+ * - Icons are large (size={24}) for easy tapping on mobile
+ * - Consistent dark mode support with color classes
+ *
+ * Hover Animations:
+ * - whileHover={{ rotate: 10 }} rotates icons 10 degrees
+ * - hover:scale-110 enlarges icons on hover
+ * - Color transitions: text-gray-600 → hover:text-blue-600
+ * - Dark mode colors adjust automatically
+ * Why? Provides clear visual feedback that links are interactive
+ *
+ * Link Implementation:
+ * - GitHub: Opens repository
+ * - LinkedIn: Opens profile
+ * - Email: Opens email client with pre-filled recipient
+ * - All use target="_blank" and rel="noopener noreferrer" for security
+ *
+ * Layout:
+ * - Section marked with id="contact" for navbar navigation
+ * - scroll-mt-20 accounts for fixed navbar
+ * - max-w-4xl prevents text from spreading too wide
+ * - flex gap-8 creates even spacing between icons
+ *
+ * Accessibility:
+ * - Semantic <a> tags for proper link behavior
+ * - Icons are clear (from lucide-react)
+ * - Color alone doesn't convey information (icons help)
+ * - Sufficient size for touch targets (24px)
+ *
+ * Copy Strategy:
+ * - Friendly, inviting heading "Let's Connect"
+ * - Simple call-to-action text below links
+ * - Professional but warm tone
+ */
 function Contact() {
   return (
     <section id="contact" className="py-20 px-6 scroll-mt-20">
