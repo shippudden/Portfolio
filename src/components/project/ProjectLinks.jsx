@@ -72,8 +72,8 @@ function ProjectLinks({ project }) {
         {/* GitHub link */}
         <motion.a 
           href={project.github}
-          target='_blank'
-          rel="nooopener noreferrer" 
+          target="_blank"
+          rel="noopener noreferrer" 
           className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
           whileHover={{ scale: 1.1, rotateZ: 5 }}
           whileTap={{ scale: 0.95 }}
@@ -85,8 +85,8 @@ function ProjectLinks({ project }) {
         {/* Demo link */}
         <motion.a 
           href={project.demo}
-          target='_blank'
-          rel="nooopener noreferrer" 
+          target="_blank"
+          rel="noopener noreferrer" 
           className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
           whileHover={{ scale: 1.1, rotateZ: -5 }}
           whileTap={{ scale: 0.95 }}
@@ -99,7 +99,7 @@ function ProjectLinks({ project }) {
   }
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-9">
       {project.id === 'lingua-quest' ? (
         <motion.a 
           href="https://app.uxcel.com/showcase/linguaquest-866?utm_source=share-brief-project"
@@ -113,13 +113,22 @@ function ProjectLinks({ project }) {
           <span>UXcel</span>
         </motion.a>
       ) : (
-        <motion.div whileHover={{ scale: 1.1, rotateZ: 5 }} whileTap={{ scale: 0.95 }}>
-            <FileText size={18} />
-            <span>Case Study</span>
-        </motion.div>
+        <motion.a
+          href={project.caseStudyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+          whileHover={{ scale: 1.1, rotateZ: 5 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <FileText size={18} />
+          <span>Case Study</span>
+        </motion.a>
       )}
       <motion.a
         href={project.prototype}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
         whileHover={{ scale: 1.1, rotateZ: -5 }}
         whileTap={{ scale: 0.95 }}
@@ -137,7 +146,8 @@ ProjectLinks.propTypes = {
     type: PropTypes.string.isRequired,
     github: PropTypes.string,
     demo: PropTypes.string,
-    prototype: PropTypes.string
+    prototype: PropTypes.string,
+    caseStudyUrl: PropTypes.string
   }).isRequired
 };
 

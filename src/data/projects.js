@@ -14,6 +14,16 @@ import linguaQuest from "../assets/LinguaQuestThumbnail.png";
 
 export const projects = [
     {
+      id: "paws-and-preens",
+      title: "Paws & Preens",
+      description: "Designed a mobile-first landing page to increase online bookings through strategic color psychology and conversion-focused UX. Applied responsive design across 3 breakpoints (375px → 1440px) with consistent design system implementation.",
+      image: linguaQuest,
+      tags: ["Responsive Design", "UI/UX Design", "Mobile-first", "landing page", "conversion design", "pet tech", "product design", "Figma", "Uxcel", "breakpoints"],
+      type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/241372535/Paws-Preen-Responsive-Pet-Salon-Landing-Page",
+      prototype: "https://www.figma.com/proto/yamkxg3CxR6PIsapwaDjdx/Paws---Preen?page-id=0%3A1&node-id=13-47&p=f&viewport=-124%2C25%2C0.06&t=uhYJfDE1mGvfkpEC-1&scaling=scale-down&content-scaling=fixed",
+    },
+    {
       id: "lingua-quest",
       title: "Lingua Quest",
       description: "An AI-powered redesign of Duolingo, transforming the learning experience into an epic adventure. Using UXPilot for ideation and Figma for execution, I created a cohesive, gamified mobile app with a unique visual identity and interactive prototype. The design process leveraged AI as a collaborative partner—using UXPilot for rapid concept generation through advanced prompt engineering.",
