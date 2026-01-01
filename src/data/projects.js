@@ -11,13 +11,14 @@ import axonUIImg from "../assets/Axon UI.png";
 import orbit from "../assets/Orbit.jpg";
 import creativeHubImg from "../assets/Creativehub.png";
 import linguaQuest from "../assets/LinguaQuestThumbnail.png";
+import PawsandPreens from "../assets/Paws and Preens.png";
 
 export const projects = [
     {
       id: "paws-and-preens",
       title: "Paws & Preens",
       description: "Designed a mobile-first landing page to increase online bookings through strategic color psychology and conversion-focused UX. Applied responsive design across 3 breakpoints (375px → 1440px) with consistent design system implementation.",
-      image: linguaQuest,
+      image: PawsandPreens,
       tags: ["Responsive Design", "UI/UX Design", "Mobile-first", "landing page", "conversion design", "pet tech", "product design", "Figma", "Uxcel", "breakpoints"],
       type: "design",
       caseStudyUrl: "https://www.behance.net/gallery/241372535/Paws-Preen-Responsive-Pet-Salon-Landing-Page",
