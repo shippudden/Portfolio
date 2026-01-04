@@ -31,6 +31,7 @@ export const projects = [
       image: linguaQuest,
       tags: ["AI-Assisted Design", "Mobile UI/UX", "Duolingo Redesign", "Prompt Engineering", "UX Pilot", "Iterative Design", "Interactive Prototyping", "Figma", "Gamification", "Visual Design"],
       type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/241509975/Redesigning-Duolingo-An-AI-Assisted-Mobile-App-Concept",
       prototype: "https://www.figma.com/proto/hVgGw4R5jvmVdYTvxgsFdg/LinguaQuest?page-id=0%3A1&node-id=3-3&viewport=140%2C69%2C0.22&t=zDQ4t3Bp7xeVjpBP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A3",
     },
 
