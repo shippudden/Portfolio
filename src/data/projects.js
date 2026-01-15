@@ -12,8 +12,19 @@ import orbit from "../assets/Orbit.jpg";
 import creativeHubImg from "../assets/Creativehub.png";
 import linguaQuest from "../assets/LinguaQuestThumbnail.png";
 import PawsandPreens from "../assets/Paws and Preens.png";
+import StitchSavvy from "../assets/StitchSavvy.png";
 
 export const projects = [
+    {
+      id: "stitch-savvy",
+      title: "StitchSavvy",
+      description: "StitchSavvy is a fictional AI-powered fashion concierge service designed as part of a UXcel design exercise. The challenge was to create a high-converting landing page that demonstrates mastery of landing page design and UX writing principles.",
+      image: StitchSavvy,
+      tags: ["Responsive Design", "UI/UX Design", "Mobile-first", "landing page", "Conversion Design", "Fashion Tech", "Product Design", "Figma", "Uxcel", "Design Process", "UX Writing", "Competitive Analysis", "Design Thinking"],
+      type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/242261559/StitchSavvy-AI-Fashion-Concierge-Landing-Page",
+      prototype: "https://www.figma.com/proto/BR1W7SdKcCbUs5Jr26o4H2/StitchSavvy?page-id=0%3A1&node-id=29-2608&viewport=195%2C119%2C0.04&t=pvy1qc2g27ulaWbb-1&scaling=scale-down&content-scaling=fixed",
+    },
     {
       id: "paws-and-preens",
       title: "Paws & Preens",
