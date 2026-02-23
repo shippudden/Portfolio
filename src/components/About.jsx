@@ -50,7 +50,7 @@ function About() {
         >
           <h2 className="text-3xl font-bold mb-6 dark:text-white">About Me</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-            I’m a creative and detail-oriented Product Designer and Frontend Developer with two years of experience designing and developing user-centered digital products. I’m passionate about crafting intuitive experiences that align design, functionality, and accessibility.
+            I’m a creative and detail-oriented Product Designer and Frontend Developer with 3 years of experience designing and developing user-centered digital products. I’m passionate about crafting intuitive experiences that align design, functionality, and accessibility.
 
             My journey began with a design bootcamp that shaped my approach to product thinking and user experience. Since then, I’ve worked on several projects — including hackathons and UX challenges — that helped me refine my design process, prototype with purpose, and collaborate effectively with developers.
 
@@ -76,7 +76,7 @@ function About() {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-center dark:text-white transform translate-z-12">Front-end Development</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center transform translate-z-12">
-              I design digital products that are intuitive, accessible, and aligned with user needs. My process combines research, wireframing, and prototyping to create experiences that are both functional and delightful.
+              I build responsive, interactive web interfaces using modern technologies like HTML, CSS, JavaScript, and React. My goal is to bring designs to life with clean, efficient, and maintainable code.
             </p>
           </motion.div>
 
@@ -97,8 +97,7 @@ function About() {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-center dark:text-white transform translate-z-12">Product Design</h3>
             <p className="text-gray-600 dark:text-gray-400 text-center transform translate-z-12">
-              I build responsive, interactive web interfaces using modern technologies like HTML, CSS, JavaScript, and React. My goal is to bring designs to life with clean, efficient, and maintainable code.
-
+              I design digital products that are intuitive, accessible, and aligned with user needs. My process combines research, wireframing, and prototyping to create experiences that are both functional and delightful.
             </p>
           </motion.div>
 
