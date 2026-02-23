@@ -10,11 +10,22 @@ import dashboardImg from "../assets/MotionUI Dashboard.jpg";
 import axonUIImg from "../assets/Axon UI.png";
 import orbit from "../assets/Orbit.jpg";
 import creativeHubImg from "../assets/Creativehub.png";
-import linguaQuest from "../assets/LinguaQuestThumbnail.png";
-import PawsandPreens from "../assets/Paws and Preens.png";
+import linguaQuest from "../assets/LinguaQuest.png";
+import PawsandPreens from "../assets/Paws & Preen.png";
 import StitchSavvy from "../assets/StitchSavvy.png";
+import EchoWave from "../assets/EchoWave.png";
 
 export const projects = [
+    {
+      id: "echo-wave",
+      title: "EchoWave",
+      description: "EchoWave is a conceptual music streaming app designed to explore accessible light and dark mode design. The goal was to create a clean, modern listening experience that feels comfortable in both bright and low-light environments, while maintaining strong visual hierarchy and WCAG-compliant contrast across all screens.",
+      image: EchoWave,
+      tags: ["Dark Mode", "UI/UX Design", "Mobile App Design", "Accessibility", "Music App", "Product Design", "Figma", "WCAG", "Design Process", "Inclusive Design", "Interactive Design", "Design System"],
+      type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/243578103/EchoWave-Music-Streaming-App-%28Light-Dark-Mode-UXUI%29",
+      prototype: "https://www.figma.com/proto/k7hRjrwkzcpOlJMRHYWGZR/EchoWave?page-id=0%3A1&node-id=33-136&viewport=261%2C205%2C0.19&t=b9n38ty9UPdQTqX7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=33%3A136",
+    },
     {
       id: "stitch-savvy",
       title: "StitchSavvy",
@@ -37,7 +48,7 @@ export const projects = [
     },
     {
       id: "lingua-quest",
-      title: "Lingua Quest",
+      title: "LinguaQuest",
       description: "An AI-powered redesign of Duolingo, transforming the learning experience into an epic adventure. Using UXPilot for ideation and Figma for execution, I created a cohesive, gamified mobile app with a unique visual identity and interactive prototype. The design process leveraged AI as a collaborative partner—using UXPilot for rapid concept generation through advanced prompt engineering.",
       image: linguaQuest,
       tags: ["AI-Assisted Design", "Mobile UI/UX", "Duolingo Redesign", "Prompt Engineering", "UX Pilot", "Iterative Design", "Interactive Prototyping", "Figma", "Gamification", "Visual Design"],
