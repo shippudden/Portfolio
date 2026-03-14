@@ -74,7 +74,7 @@ function Contact() {
             <Linkedin size={24} />
           </motion.a>
           <motion.a 
-            href="mailto:boluwatifeda45@gmail.com" 
+            href="mailto:boluwatifedavid494@gmail.com" 
             target='_blank'
             rel='nooopener noreferrer'
             className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transform hover:scale-110 transition-all"
