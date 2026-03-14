@@ -14,8 +14,30 @@ import linguaQuest from "../assets/LinguaQuest.png";
 import PawsandPreens from "../assets/Paws & Preen.png";
 import StitchSavvy from "../assets/StitchSavvy.png";
 import EchoWave from "../assets/EchoWave.png";
+import Checkout from "../assets/Checkout.png";
+import Finova from "../assets/Finova.png";
 
 export const projects = [
+    {
+      id: "fintech-404-page",
+      title: "Fintech 404 Error Page — UX Case Study",
+      description: "The design focuses on clear UX writing, strong recovery actions, and maintaining trust — which is especially important in financial products. In this project, I designed a mobile 404 error page for a fintech platform with the goal of turning a frustrating moment into a helpful and reassuring experience.",
+      image: Finova,
+      tags: ["404 page", "UI/UX Design", "Error State Design", "UX Writing", "Mobile UI", "Product Design", "Fintech Design", "User Experience", "Interface Design", "Interaction Design"],
+      type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/245322741/Designing-a-Helpful-404-Error-Page-for-a-Fintech-App",
+      prototype: "https://www.figma.com/proto/k7hRjrwkzcpOlJMRHYWGZR/EchoWave?page-id=0%3A1&node-id=33-136&viewport=261%2C205%2C0.19&t=b9n38ty9UPdQTqX7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=33%3A136",
+    },
+    {
+      id: "checkout-page",
+      title: "Mobile E-commerce Checkout Redesign",
+      description: "This project focuses on redesigning a mobile e-commerce checkout flow to reduce cart abandonment and improve completion rates. The goal was to create a structured, low-friction experience that minimizes cognitive load while reinforcing trust at key decision points.",
+      image: Checkout,
+      tags: ["Mobile UX", "UI/UX Design", "E-commerce UX", "Checkout Flow", "Progressive Disclosure", "Product Design", "Figma", "Form Design", "Trust & Security UX", "Microcopy", "Interaction Design", "Cognitive Load Reduction"],
+      type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/245139701/Mobile-Checkout-UX-Design-Reducing-Cart-Abandonment",
+      prototype: "https://www.figma.com/proto/k7hRjrwkzcpOlJMRHYWGZR/EchoWave?page-id=0%3A1&node-id=33-136&viewport=261%2C205%2C0.19&t=b9n38ty9UPdQTqX7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=33%3A136",
+    },
     {
       id: "echo-wave",
       title: "EchoWave",
