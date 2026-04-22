@@ -27,6 +27,7 @@ export const projects = [
       tags: ["Product Design", "UI/UX Design", "Wireframe", "Case Study", "User Flow", "Mobile App", "Competitive Analysis", "User Experience", "Interface Design", "Interaction Design", "Content Discovery", "UX Research"],
       type: "design",
       caseStudyUrl: "https://www.behance.net/gallery/247179031/Rethinking-Netflix-A-Mood-Based-Streaming-Experience",
+      prototype: "https://www.figma.com/proto/6y9PmkC3f0bJb6Fm4aHPaX/Wireframing-for-Video-Streaming-Service--Netflix-?node-id=18-428&viewport=399%2C-9%2C0.28&t=7OMVUHD7RUDlzJ7H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=18%3A428&show-proto-sidebar=1&page-id=0%3A1"
     },
     {
       id: "fintech-404-page",
