@@ -16,8 +16,18 @@ import StitchSavvy from "../assets/StitchSavvy.png";
 import EchoWave from "../assets/EchoWave.png";
 import Checkout from "../assets/Checkout.png";
 import Finova from "../assets/Finova.png";
+import Wireframe from "../assets/Wireframe 2.png";
 
 export const projects = [
+    {
+      id: "rethinking-netflix",
+      title: "Rethinking Netflix — A Mood-Based Streaming Experience",
+      description: `Users spend more time searching than watching. This redesign rethinks Netflix with mood-based discovery, smart search, and social recommendations to reduce decision fatigue.`,
+      image: Wireframe,
+      tags: ["Product Design", "UI/UX Design", "Wireframe", "Case Study", "User Flow", "Mobile App", "Competitive Analysis", "User Experience", "Interface Design", "Interaction Design", "Content Discovery", "UX Research"],
+      type: "design",
+      caseStudyUrl: "https://www.behance.net/gallery/247179031/Rethinking-Netflix-A-Mood-Based-Streaming-Experience",
+    },
     {
       id: "fintech-404-page",
       title: "Fintech 404 Error Page — UX Case Study",
